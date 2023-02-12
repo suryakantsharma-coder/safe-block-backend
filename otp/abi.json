@@ -1,0 +1,216 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_otp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_partnerOtp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_add",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_partner",
+				"type": "address"
+			}
+		],
+		"name": "otp2Verified",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_otp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_add",
+				"type": "address"
+			}
+		],
+		"name": "otpVerified",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_add",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_otp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_exp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_server",
+				"type": "uint256"
+			}
+		],
+		"name": "setOtp",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "_otp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_exp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isUsed",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct OTP.otps",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_server",
+				"type": "uint256"
+			}
+		],
+		"name": "setServer",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_add",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_partner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_otpOne",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_otpTwo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_exp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_server",
+				"type": "uint256"
+			}
+		],
+		"name": "setTwoOtp",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "_otpOne",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_otpTwo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_addressOne",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_addressTwo",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_exp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_isUsed",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct OTP.twoOtps",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
