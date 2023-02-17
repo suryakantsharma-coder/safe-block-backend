@@ -9,7 +9,7 @@ const port = 4000;
 
 app.post("/", checkAccessToken, (req, res) => {
   console.log(req?.header);
-  res.send("hellow working well");
+  res.send("Welcome to safe-block");
 });
 
 app.use(bodyParser.json());
